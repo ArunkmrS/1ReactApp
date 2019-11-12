@@ -12,7 +12,14 @@ class App extends Component {
   }
 
   switchNameHandler = () => {
-    console.log("Button Clicked");
+  //  console.log("Button Clicked");
+  //DONT DO BELOW TO CHANGE OT MUTATE THE STATE, REACT WONT ALLOW
+  //this.state.persons[0].name="Arun Kumar";
+  this.setState({persons: [
+    { name:"Arun Kumar", age: 28},
+    { name:"Aditya", age: 23},
+    { name:"Shubham", age: 25}
+  ]});
   }
 
   render() {
